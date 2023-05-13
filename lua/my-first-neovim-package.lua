@@ -1,15 +1,16 @@
-local myname = ""
+-- get username from login session
+local username = vim.fn.expand("$USER")
 
 local function setup(ctx)
     if ctx == nil then
         return
     end
 
-    myname = ctx.name
+    username = ctx.name
 end
 
 function _G.my_first_neovim_package()
-    print("Hello, " .. myname)
+    print("Hello, " .. username)
 end
 
 return {
