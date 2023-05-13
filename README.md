@@ -15,7 +15,7 @@ use 'elor/my-first-neovim-package'
 Setup:
 
 ```lua
-require('my-first-neovim-package'
+require('my-first-neovim-package')
 ```
 
 ## Usage
